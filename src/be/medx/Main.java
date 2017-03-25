@@ -38,6 +38,25 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
 import be.fgov.ehealth.etee.crypto.utils.KeyManager;
+import be.medx.crypto.Credential;
+import be.medx.crypto.KeyStoreCredential;
+import be.medx.crypto.KeyStoreInfo;
+import be.medx.crypto.KeyStoreManager;
+import be.medx.exceptions.TechnicalConnectorException;
+import be.medx.saml.IdGeneratorFactory;
+import be.medx.saml.SAMLAttribute;
+import be.medx.saml.SAMLAttributeDesignator;
+import be.medx.saml.SAMLConfigHelper;
+import be.medx.saml.SAMLConverter;
+import be.medx.saml.SAMLHelper;
+import be.medx.saml.SAMLNameIdentifier;
+import be.medx.saml.SAMLToken;
+import be.medx.saml.SAMLTokenFactory;
+import be.medx.soap.ws.GenericRequest;
+import be.medx.soap.ws.GenericWsSenderImpl;
+import be.medx.utils.ConnectorIOUtils;
+import be.medx.utils.ConnectorXmlUtils;
+import be.medx.utils.DateUtils;
 
 public class Main {
 
