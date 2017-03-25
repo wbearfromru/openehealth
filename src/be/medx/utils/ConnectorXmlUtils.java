@@ -1,55 +1,32 @@
-// 
-// Decompiled by Procyon v0.5.29
-// 
-
 package be.medx.utils;
 
-import org.slf4j.LoggerFactory;
-
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.io.StringReader;
+import java.io.StringWriter;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import java.io.Writer;
-import java.io.StringWriter;
-import java.io.Reader;
-
-import org.xml.sax.InputSource;
-
-import java.io.StringReader;
 
 import javax.xml.parsers.DocumentBuilder;
-
-import java.io.IOException;
-
-import javax.xml.parsers.ParserConfigurationException;
-
-import org.xml.sax.SAXException;
-
-import java.io.InputStream;
-import java.io.ByteArrayInputStream;
-
 import javax.xml.parsers.DocumentBuilderFactory;
-
-import org.w3c.dom.Document;
-
-import javax.xml.namespace.QName;
-import javax.xml.transform.Transformer;
+import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.transform.Result;
 import javax.xml.transform.Source;
-import javax.xml.transform.TransformerException;
+import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerConfigurationException;
+import javax.xml.transform.TransformerException;
 import javax.xml.transform.TransformerFactory;
-
-import java.io.OutputStream;
-
+import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 
-import java.io.ByteArrayOutputStream;
-
-import javax.xml.transform.dom.DOMSource;
-
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
-import org.slf4j.Logger;
+import org.xml.sax.InputSource;
+import org.xml.sax.SAXException;
 
 import be.medx.exceptions.TechnicalConnectorException;
 import be.medx.xml.MarshallerHelper;
