@@ -5,5 +5,9 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Common"/>
 	<classpathentry kind="lib" path="lib/connector-utilities-external-3.10.2.jar"/>
 	<classpathentry kind="lib" path="lib/connector-utilities-genericasync-3.10.2.jar"/>
+	<classpathentry kind="lib" path="lib/connector-utilities-kmehr-3.10.2.jar"/>
+	<classpathentry kind="lib" path="lib/connector-utilities-messageservices-3.10.2.jar"/>
+	<classpathentry kind="lib" path="lib/connector-utilities-gmfv1-3.10.2.jar"/>
+	<classpathentry kind="lib" path="lib/connector-utilities-mycarenetcommons-3.10.2.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
